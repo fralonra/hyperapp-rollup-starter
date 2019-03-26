@@ -5,6 +5,7 @@ import resolve from 'rollup-plugin-node-resolve'
 
 const plugins = [
   babel({
+    presets: [["@babel/preset-env"]],
     plugins: [['transform-react-jsx', { pragma: 'h' }]]
   }),
   resolve(),
